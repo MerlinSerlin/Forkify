@@ -18,7 +18,6 @@ import {elements, renderLoader, clearLoader} from './views/base';
 
 
 const state = {};
-window.state = state;
 
 /* 
 SEARCH CONTROLLER
@@ -80,7 +79,6 @@ RECIPE CONTROLLER
 
 const controlRecipe = async () => {
     const id = window.location.hash.replace('#', '');
-    console.log(id);
     
     if (id){
         // prepare UI for changes
@@ -241,4 +239,4 @@ elements.recipe.addEventListener('click', e => {
     }
 })
 
-window.l = new List();
+
